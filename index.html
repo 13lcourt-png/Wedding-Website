@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luke & Hannah | Our Wedding</title>
+<meta name="description" content="Join Luke and Hannah to celebrate their wedding in Beer, Devon, on 1 September 2028.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #f8f6ef;
+  --navy: #263b4b;
+  --blue: #718b96;
+  --gold: #b49a6a;
+  --white: #fffefa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 22px 15px;
+  border-bottom: 1px solid #dedbd1;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a:hover { color: var(--gold); }
+
+.hero {
+  min-height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 20px;
+  background:
+    radial-gradient(ellipse at 50% 100%, #dce5e1 0%, transparent 55%),
+    var(--cream);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 11px;
+  color: var(--blue);
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(65px, 12vw, 112px);
+  line-height: 1.05;
+  margin: 28px 0;
+}
+
+.ampersand {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.hero-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.hero-location {
+  margin-top: 8px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.ornament {
+  color: var(--gold);
+  font-size: 23px;
+  margin: 25px 0;
+}
+
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.section-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 48px;
+  margin: 10px 0 25px;
+}
+
+.section p {
+  max-width: 620px;
+  margin: 0 auto 18px;
+  font-size: 14px;
+}
+
+.label {
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+}
+
+.details {
+  background: var(--white);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 45px;
+}
+
+.detail-card {
+  padding: 35px 25px;
+  border: 1px solid #e4e0d5;
+}
+
+.detail-card h3 {
+  font-size: 31px;
+  margin-bottom: 12px;
+}
+
+.detail-card p {
+  font-size: 13px;
+}
+
+.soft-section {
+  background: #e9efeb;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 35px;
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.button:hover { background: var(--blue); }
+
+footer {
+  padding: 45px 20px;
+  text-align: center;
+  background: var(--navy);
+  color: var(--cream);
+}
+
+footer h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  nav { gap: 15px; }
+  nav a { font-size: 9px; }
+  .hero { min-height: 480px; }
+  .section { padding: 65px 20px; }
+  .section h2 { font-size: 39px; }
+  .detail-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#day">The Day</a>
+  <a href="#travel">Travel</a>
+  <a href="#accommodation">Stay</a>
+  <a href="#rsvp">RSVP</a>
+</nav>
+
+<header class="hero" id="home">
+  <p class="eyebrow">Together with our families</p>
+
+  <h1>
+    Luke <span class="ampersand">&</span><br>
+    Hannah
+  </h1>
+
+  <p class="hero-date">1 September 2028</p>
+  <p class="hero-location">Beer, Devon</p>
+
+  <div class="ornament">✧ &nbsp; ✧ &nbsp; ✧</div>
+
+  <p>We would love you to join us<br>to celebrate our wedding.</p>
+</header>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="label">A day to celebrate</p>
+    <h2>We are getting married!</h2>
+    <p>
+      We are delighted to invite you to celebrate our wedding
+      with us in the beautiful village of Beer, Devon.
+      We look forward to bringing our favourite people together
+      for a wonderful day.
+    </p>
+    <p>Further details will follow as the day approaches.</p>
+  </div>
+</section>
+
+<section class="section details" id="day">
+  <div class="section-inner">
+    <p class="label">The celebrations</p>
+    <h2>The Wedding Day</h2>
+
+    <div class="detail-grid">
+      <div class="detail-card">
+        <p class="label">The ceremony</p>
+        <h3>Beer Church</h3>
+        <p>
+          Our wedding ceremony will take place at
+          Beer Church, Devon.
+        </p>
+        <p>Time to be confirmed.</p>
+      </div>
+
+      <div class="detail-card">
+        <p class="label">The reception</p>
+        <h3>The Celebrations</h3>
+        <p>
+          Join us afterwards for a reception,
+          food, drinks and dancing.
+        </p>
+        <p>Venue and timings to be confirmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-section" id="travel">
+  <div class="section-inner">
+    <p class="label">Getting here</p>
+    <h2>Travel & Transport</h2>
+    <p>
+      Beer is a beautiful coastal village in East Devon.
+      We recommend planning your journey in advance.
+    </p>
+    <p>
+      We will share more information about public transport,
+      parking and local taxi services closer to the wedding.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="accommodation">
+  <div class="section-inner">
+    <p class="label">Make a weekend of it</p>
+    <h2>Where to Stay</h2>
+    <p>
+      There are a number of hotels, guest houses and
+      holiday cottages in and around Beer, Seaton and Sidmouth.
+    </p>
+    <p>
+      We will provide some accommodation recommendations
+      and local information here.
+    </p>
+  </div>
+</section>
+
+<section class="section details" id="rsvp">
+  <div class="section-inner">
+    <p class="label">We hope you can make it</p>
+    <h2>Kindly RSVP</h2>
+    <p>
+      Please let us know whether you will be joining us.
+      We will also ask for any dietary requirements.
+    </p>
+
+    <a class="button" href="PASTE_GOOGLE_FORM_LINK_HERE">
+      Respond to invitation
+    </a>
+
+    <p style="margin-top:20px;font-size:11px;">
+      RSVP deadline: To be confirmed
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h2>Luke & Hannah</h2>
+  <p>1 SEPTEMBER 2028 · BEER, DEVON</p>
+</footer>
+
+</body>
+</html>
