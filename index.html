@@ -14,11 +14,13 @@
 
 <style>
 :root {
-  --cream: #f8f6ef;
-  --navy: #263b4b;
-  --blue: #718b96;
-  --gold: #b49a6a;
-  --white: #fffefa;
+  --green: #193C32;
+  --green-light: #496B59;
+  --cream: #F5F0E4;
+  --ivory: #FBF8F0;
+  --pink: #C98D91;
+  --gold: #B6A078;
+  --border: #DED5C3;
 }
 
 * {
@@ -33,7 +35,7 @@ html {
 
 body {
   background: var(--cream);
-  color: var(--navy);
+  color: var(--green);
   font-family: 'Montserrat', sans-serif;
   line-height: 1.8;
 }
@@ -42,21 +44,22 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 32px;
   padding: 22px 15px;
-  border-bottom: 1px solid #dedbd1;
+  border-bottom: 1px solid var(--border);
+  background: var(--ivory);
 }
 
 nav a {
-  color: var(--navy);
+  color: var(--green);
   text-decoration: none;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 nav a:hover {
-  color: var(--gold);
+  color: var(--pink);
 }
 
 .hero {
@@ -74,7 +77,7 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 10px;
-  color: var(--blue);
+  color: var(--green-light);
 }
 
 h1, h2, h3 {
@@ -86,29 +89,31 @@ h1 {
   font-size: clamp(65px, 12vw, 112px);
   line-height: 1.05;
   margin: 28px 0;
+  color: var(--green);
 }
 
 .ampersand {
-  color: var(--gold);
+  color: var(--pink);
   font-style: italic;
 }
 
 .hero-date {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 27px;
+  font-size: 29px;
   letter-spacing: 2px;
 }
 
 .hero-location {
   margin-top: 8px;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .ornament {
-  color: var(--gold);
+  color: var(--pink);
   font-size: 23px;
+  letter-spacing: 8px;
   margin: 25px 0;
 }
 
@@ -131,8 +136,9 @@ h1 {
 }
 
 .section h2 {
-  font-size: 48px;
+  font-size: 50px;
   margin: 10px 0 25px;
+  color: var(--green);
 }
 
 .section p {
@@ -142,7 +148,7 @@ h1 {
 }
 
 .details {
-  background: var(--white);
+  background: var(--ivory);
 }
 
 .detail-grid {
@@ -154,11 +160,12 @@ h1 {
 
 .detail-card {
   padding: 30px 24px;
-  border: 1px solid #e4e0d5;
+  border: 1px solid var(--border);
+  background: var(--ivory);
 }
 
 .detail-card h3 {
-  font-size: 31px;
+  font-size: 34px;
   margin: 12px 0;
 }
 
@@ -174,7 +181,7 @@ h1 {
 }
 
 .text-link {
-  color: var(--navy);
+  color: var(--green);
   text-decoration: underline;
   text-decoration-color: var(--gold);
   text-underline-offset: 5px;
@@ -185,38 +192,55 @@ h1 {
   display: inline-block;
   margin-top: 25px;
   padding: 14px 35px;
-  background: var(--navy);
-  color: white;
+  background: var(--green);
+  border: 1px solid var(--green);
+  color: var(--ivory);
   text-decoration: none;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.botanical {
+  color: var(--pink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 20px 0;
 }
 
 footer {
-  padding: 45px 20px;
+  padding: 55px 20px;
   text-align: center;
-  background: var(--navy);
+  background: var(--green);
   color: var(--cream);
 }
 
 footer h2 {
-  font-size: 36px;
+  font-size: 42px;
+  font-style: italic;
 }
 
 footer p {
   font-size: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 iframe {
   border: 0;
   max-width: 100%;
+  background: var(--ivory);
 }
 
 @media (max-width: 600px) {
   nav {
-    gap: 15px;
+    gap: 17px;
   }
 
   nav a {
@@ -236,7 +260,7 @@ iframe {
   }
 
   .section h2 {
-    font-size: 39px;
+    font-size: 40px;
   }
 
   .detail-grid {
@@ -271,7 +295,7 @@ iframe {
   <p class="hero-date">Saturday 10 June 2028</p>
   <p class="hero-location">Beer & Sidmouth, Devon</p>
 
-  <div class="ornament">✧ &nbsp; ✧ &nbsp; ✧</div>
+  <div class="botanical">❀ &nbsp; ❀ &nbsp; ❀</div>
 
   <p>
     We would love you to join us<br>
@@ -293,6 +317,8 @@ iframe {
     <p class="label">A day to celebrate</p>
 
     <h2>We're getting married!</h2>
+
+    <div class="botanical">❀</div>
 
     <p>
       We are delighted to invite you to celebrate our wedding
@@ -316,6 +342,8 @@ iframe {
     <p class="label">The celebrations</p>
 
     <h2>The Wedding Day</h2>
+
+    <div class="botanical">❀</div>
 
     <div class="detail-grid">
 
@@ -383,6 +411,8 @@ iframe {
 
     <h2>Where to Stay</h2>
 
+    <div class="botanical">❀</div>
+
     <p>
       There are a number of hotels, guest houses and
       holiday cottages in Beer, Seaton and Sidmouth.
@@ -412,6 +442,8 @@ iframe {
 
     <h2>Kindly RSVP</h2>
 
+    <div class="botanical">❀</div>
+
     <p>
       We would be delighted if you could join us
       on Saturday 10 June 2028.
@@ -437,6 +469,8 @@ iframe {
 </section>
 
 <footer>
+
+  <div class="botanical">❀</div>
 
   <h2>Luke & Hannah</h2>
 
